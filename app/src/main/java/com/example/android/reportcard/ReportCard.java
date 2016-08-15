@@ -9,41 +9,34 @@ public class ReportCard {
 
     //Get Subject
     private String mSubject;
-
     //Get Letter Grade
     private Character mCharacter;
-
     //Get Numerical Grade
     private int mGrade;
-
     //new report card object
-
     public ReportCard(String Subject, Character Character, int Grade) {
 
         mSubject = Subject;
         mCharacter = Character;
         mGrade = Grade;
     }
-
     //Find class subject
     public String getSubject() {
-
         return mSubject;
-
     }
-
     //Find letter grade
-    public Character getmCharacter() {
-
+    public Character getCharacter() {
         return mCharacter;
-
     }
-
-    //get numberical grade
+    //Get numerical grade
     public int getGrade() {
-
         return mGrade;
-
+    }
+    public void setGrade(int newGrade){
+        newGrade = mGrade;
+    }
+    public String toString() {
+        return "Class: " + mSubject + " Grade: " + mCharacter + " / " + mGrade ;
     }
 
 
